@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.for{
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    background-image: url('./lavash.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 650px;
+    height: 470px;
+    animation: close 1.2s steps(39) forwards;
+}
+.active{
+    background-position: 0 100%;
+    animation: open 1.2s steps(39) forwards;
+}
+@keyframes open {
+    from{
+        background-position: 0 0%;
+    }
+    to{
+        background-position: 0 100%;
+    }
+}
+@keyframes close {
+    from{
+        background-position: 0 100%;
+    }
+    to{
+        background-position: 0 0%;
+    }
+}
